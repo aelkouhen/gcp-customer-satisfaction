@@ -1,6 +1,6 @@
 # Customer Satisfaction Monitoring with Redis & GCP
 Real-Time Customer Satisfaction Monitoring using Redis Enterprise and GCP services. Bellow is the overall architecture:
-![customer-satisfaction](https://github.com/aelkouhen/gcp-customer-satisfaction/assets/customer-satisfaction.png?raw=true)
+![customer-satisfaction](https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/customer-satisfaction.png?raw=true)
 
 ## Redis Enterprise Setup
 First you need to create a Redis Enterprise Cluster. For this, you can use [Terrmaine](https://github.com/amineelkouhen/terramine) project to provision it.
