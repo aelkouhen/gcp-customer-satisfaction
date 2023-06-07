@@ -1,4 +1,4 @@
-# Customer Satisfaction
+# Customer Satisfaction Monitoring with Redis & GCP
 Real-Time Customer Satisfaction Monitoring using Redis Enterprise and GCP services. Bellow is the overall architecture:
 ![customer-satisfaction](https://github.com/aelkouhen/customer-satisfaction/assets/105490765/0579f283-edf8-46e4-88a0-acf93975d778)
 
