@@ -1,6 +1,6 @@
 # Customer Satisfaction Monitoring with Redis & GCP
 Real-Time Customer Satisfaction Monitoring using Redis Enterprise and GCP services. Bellow is the overall architecture:
-![customer-satisfaction](https://github.com/aelkouhen/customer-satisfaction/assets/105490765/0579f283-edf8-46e4-88a0-acf93975d778)
+![customer-satisfaction](https://github.com/aelkouhen/gcp-customer-satisfaction/assets/customer-satisfaction.png)
 
 ## Redis Enterprise Setup
 First you need to create a Redis Enterprise Cluster. For this, you can use [Terrmaine](https://github.com/amineelkouhen/terramine) project to provision it.
@@ -10,22 +10,22 @@ Let's assume the database endpoint is `redis-12000.cluster.redis-satisfaction.de
 ## Google Cloud Setup
 
 1. You need to create a Pub/Sub topic called `customer-satisfaction`. Once the topic is created, click on the `Trigger Cloud Function` button.
-![image](https://github.com/aelkouhen/gcp-customer-satisfaction/assets/105490765/69abbc00-2681-48bd-87be-bd4b8837e527)
+![image](https://github.com/aelkouhen/gcp-customer-satisfaction/assets/1-satisfaction.png)
 
 2. Select a 2nd Generation function and name it `function-customer-satisfaction`, then choose your default region (in which the topic and the Redis Cluster are created).
-<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/105490765/b74182d8-c0d5-4fad-98d8-f8244c047fd3">
+<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/2-satisfaction.png">
 
 3. To simplify the demo, allow unauthenticated invocations and make sure the fucntion is triggered by the right pub/sub topic.
-<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/105490765/30b214fe-10a9-4add-828d-1e10af4e04aa">
+<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/3-satisfaction.png">
 
 4. In the setting, ensure that you allow at least 8GiB of Memory and 2 vCPU for this cloud function.
-<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/105490765/b3f6ad01-8356-4353-8dab-93d6509c3c23">
+<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/4-satisfaction.png">
 
 5. Then create three runtime environment variables: `REDIS_HOST`, `REDIS_PORT`, and `REDIS_PWD` with the specific values of your Redis database.
-<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/105490765/21890e65-302b-4a18-b473-5339cbf14b4f">
+<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/5-satisfaction.png">
 
 6. Finally, copy the content of this [cloud function](https://raw.githubusercontent.com/aelkouhen/gcp-customer-satisfaction/main/cloud-function/main.py) and this [requirements file](https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/cloud-function/requirements.txt) in the inline editor and click on `deploy function`
-<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/105490765/da1c57d0-6a26-4d4b-a027-e76f83ccaa39">
+<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/6-satisfaction.png">
 
 ## Local Setup
 1. Install GCloud (see [here](https://cloud.google.com/sdk/docs/install)) 
