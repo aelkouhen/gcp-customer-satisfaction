@@ -54,4 +54,4 @@ Now, you can go to the browse menu and import these two dashboards:
 <img width="1494" alt="Customer_Overall" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/Satisfaction_Customer.gif?raw=true">
 
 2. The second one is the [Overview Dashboard](https://raw.githubusercontent.com/aelkouhen/gcp-customer-satisfaction/main/dashboards/Overview.json) that allows monitoring the overall satisfaction if the call center: It makes statistics about all satisfaction scores of all incoming calls.
-<img width="1494" alt="Customer_Overall" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/Customer_Overall.gif?raw=true">
+<img width="1494" alt="Customer_Overall" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/Customer_Overall.png?raw=true">
