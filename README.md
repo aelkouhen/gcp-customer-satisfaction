@@ -25,7 +25,7 @@ Let's assume the database endpoint is `redis-12000.cluster.redis-satisfaction.de
 <img width="546" alt="image" src="https://github.com/aelkouhen/customer-satisfaction/assets/105490765/21890e65-302b-4a18-b473-5339cbf14b4f">
 
 6. Finally, copy the content of this [cloud function](https://raw.githubusercontent.com/aelkouhen/customer-satisfaction/main/cloud-function/main.py) and this [requirements file](https://github.com/aelkouhen/customer-satisfaction/blob/main/cloud-function/requirements.txt) in the inline editor and click on `deploy function`
-![image](https://github.com/aelkouhen/customer-satisfaction/assets/105490765/da1c57d0-6a26-4d4b-a027-e76f83ccaa39)
+<img width="546" alt="image" src="https://github.com/aelkouhen/customer-satisfaction/assets/105490765/da1c57d0-6a26-4d4b-a027-e76f83ccaa39">
 
 ## Local Setup
 1. Install GCloud (see [here](https://cloud.google.com/sdk/docs/install)) 
