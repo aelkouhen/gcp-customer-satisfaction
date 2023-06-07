@@ -50,8 +50,8 @@ Then fill your database endpoint and configured with appropriate password and hi
 ![image](https://github.com/Redislabs-Solution-Architects/aws-fraud-detection/blob/main/docs/images/5-grafana-redis-datasource-test.png?raw=true)
 
 Now, you can go to the browse menu and import these two dashboards:
-1. The first one is the Customer Satisfaction Dashboard that allows monitoring in Real-Time each incoming call (customer).
+1. The first one is the [Customer Satisfaction Dashboard](https://raw.githubusercontent.com/aelkouhen/customer-satisfaction/main/dashboards/Customer%20Satisfaction.json) that allows monitoring in Real-Time each incoming call (customer).
 ![Satisfaction_Customer](https://github.com/aelkouhen/customer-satisfaction/assets/105490765/adfb2651-aea2-45ef-bb45-28ff444f966e)
 
-2. The second one is the Overview Dashboard that allows monitoring the overall satisfaction if the call center: It makes statistics about all satisfaction scores of all incoming calls.
+2. The second one is the [Overview Dashboard](https://raw.githubusercontent.com/aelkouhen/customer-satisfaction/main/dashboards/Overview.json) that allows monitoring the overall satisfaction if the call center: It makes statistics about all satisfaction scores of all incoming calls.
 <img width="1494" alt="Customer_Overall" src="https://github.com/aelkouhen/customer-satisfaction/assets/105490765/f863a4b8-0756-4491-a3d0-0e3964b80c0c">
