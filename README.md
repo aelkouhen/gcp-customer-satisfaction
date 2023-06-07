@@ -10,22 +10,22 @@ Let's assume the database endpoint is `redis-12000.cluster.redis-satisfaction.de
 ## Google Cloud Setup
 
 1. You need to create a Pub/Sub topic called `customer-satisfaction`. Once the topic is created, click on the `Trigger Cloud Function` button.
-![image](https://github.com/aelkouhen/gcp-customer-satisfaction/assets/1-satisfaction.png)
+![image](https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/1-satisfaction.png?raw=true)
 
 2. Select a 2nd Generation function and name it `function-customer-satisfaction`, then choose your default region (in which the topic and the Redis Cluster are created).
-<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/2-satisfaction.png">
+<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/2-satisfaction.png?raw=true">
 
 3. To simplify the demo, allow unauthenticated invocations and make sure the fucntion is triggered by the right pub/sub topic.
-<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/3-satisfaction.png">
+<img width="569" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/3-satisfaction.png?raw=true">
 
 4. In the setting, ensure that you allow at least 8GiB of Memory and 2 vCPU for this cloud function.
-<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/4-satisfaction.png">
+<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/4-satisfaction.png?raw=true">
 
 5. Then create three runtime environment variables: `REDIS_HOST`, `REDIS_PORT`, and `REDIS_PWD` with the specific values of your Redis database.
-<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/5-satisfaction.png">
+<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/5-satisfaction.png?raw=true">
 
 6. Finally, copy the content of this [cloud function](https://raw.githubusercontent.com/aelkouhen/gcp-customer-satisfaction/main/cloud-function/main.py) and this [requirements file](https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/cloud-function/requirements.txt) in the inline editor and click on `deploy function`
-<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/assets/6-satisfaction.png">
+<img width="546" alt="image" src="https://github.com/aelkouhen/gcp-customer-satisfaction/blob/main/assets/6-satisfaction.png?raw=true">
 
 ## Local Setup
 1. Install GCloud (see [here](https://cloud.google.com/sdk/docs/install)) 
